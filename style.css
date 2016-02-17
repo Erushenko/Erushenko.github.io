@@ -3,7 +3,9 @@ body {
  background: #f06d06;
 }
 
-header, nav {
+header,
+nav,
+.HeaderTest {
  text-align: center;
  background: white;
  margin: 20px 0;
@@ -16,4 +18,8 @@ nav a {
  border-radius: 5px;
  color: white;
  padding: 3px 8px;
+}
+
+a:hover{
+  background: #777;
 }
