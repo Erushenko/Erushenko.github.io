@@ -1,0 +1,22 @@
+body{
+	background-color: gainsboro;
+}
+
+
+div,
+p,
+a{
+	margin: 0px 10px;
+}
+
+#header{
+  text-align: center;
+}
+
+#Main{
+	width: 500px;
+	border: 1px solid grey;
+	margin: auto 25%;
+	background-color: white;
+	padding: 3%;
+}
