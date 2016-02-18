@@ -16,7 +16,7 @@ a{
 #Main{
 	width: 500px;
 	border: 1px solid grey;
-	margin: auto 25%;
+	margin: 0 px auto;
 	background-color: white;
 	padding: 3%;
 }
