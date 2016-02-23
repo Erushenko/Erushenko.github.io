@@ -1,0 +1,10 @@
+ffa{
+   line-height: 50px;
+   height: 70px;
+   font-size: 18px;
+   color: red;
+}
+
+#link:hover { color: red; }
+
+#link { color: grey; }
