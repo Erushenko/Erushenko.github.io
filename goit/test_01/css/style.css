@@ -5,6 +5,6 @@ ffa{
    color: red;
 }
 
-#link:hover { color: red; }
+:hover { color: red; }
 
 #link { color: grey; }
