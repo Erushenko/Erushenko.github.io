@@ -1,0 +1,27 @@
+.block1{
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin: 14px;
+  display: inline;
+}
+
+.block2{
+  display: inline;
+  margin: 10px;
+  float: left;
+  background-color: green;
+  width: 200px;
+  height: 100px;
+}
+
+.main{
+  /*display: inline;*/
+  margin: 10px;
+  float: left;
+  background-color: red;
+  width: 600px;
+  height: 500px;
+
+}
