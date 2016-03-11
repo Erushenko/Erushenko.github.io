@@ -1,29 +1,42 @@
-.main{
-float: left;
-  width: 600px;
-  height: 500px;
-  margin: 10px;
-  background-color: red;
+#container3 {
+    float:left;
+    width:100%;
+    background:green;
+    overflow:hidden;
+    position:relative;
 }
-.block1{
-  float: left;
-  height: 100px;
-  width: 200px;
-  margin: 10px;
-  background-color: black;
+#container2 {
+    float:left;
+    width:100%;
+    background:yellow;
+    position:relative;
+    right:30%;
 }
-
-.block2{
-  /*float: left;*/
-  height: 150px;
-  width: 200px;
-  margin: 10px;
-  background-color: green;
+#container1 {
+    float:left;
+    width:100%;
+    background:red;
+    position:relative;
+    right:40%;
 }
-
-.block3{
-  height: 400px;
-  width: 100px;
-  margin: 10px;
-  background-color: yellow;
+#col1 {
+    float:left;
+    width:26%;
+    position:relative;
+    left:72%;
+    overflow:hidden;
+}
+#col2 {
+    float:left;
+    width:36%;
+    position:relative;
+    left:76%;
+    overflow:hidden;
+}
+#col3 {
+    float:left;
+    width:26%;
+    position:relative;
+    left:80%;
+    overflow:hidden;
 }
