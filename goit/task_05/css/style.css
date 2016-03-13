@@ -11,7 +11,7 @@ body{
   width: 1215px;
   height: 1030px;
   position: relative;
-  background-image: url("../img/background.png");
+  background-image: url("../img/background.jpg");
 }
 .clearfix:after {
   content:'';
