@@ -4,57 +4,45 @@
   padding:50px 45px 58px 45px;
   width:970px;
   box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-
   font-family:'OpenSans',sans-serif;
 }
-
-
 #navigation {
   height: 40px;
-  margin-left: 46px;
+  /*margin-left: 46px;*/
   margin-top: 40px;
-
   background-color: rgb(90,90,90);
-
   text-align: left;
 }
-
 #navigation ul{
   display:inline-block;
   width: 100%;
   line-height: 40px;
 }
-
 #navigation ul li {
   display: inline-block;
 }
-
 #navigation ul li a{
   padding-left: 25px;
   padding-right: 60px;
   color:white;
-
   font-size: 16px;
 }
-
-
 #navigation ul li a {
-  padding-left: 25px;
-  padding-right: 60px;
-
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 16px;
   color:white;
   text-decoration: none;
 }
 
 #navigation ul li:hover  {
-
   background-color: #3f3f3f;
   border-left: 1px solid rgb(131,131,131);
   border-right: 1px solid rgb(131,131,131);
-
-  }
-
+}
+#navigation ul li a:hover  {
+  text-align: center;
+}
 
 #navigation a:visited {
   color: rgb(255, 255, 255); /* Цвет посещенных ссылок */
@@ -66,7 +54,7 @@
   border-left: 1px solid rgb(200,200,200);
   border-right: 1px solid rgb(200,200,200);
   border-bottom: 1px solid rgb(200,200,200);
- }
+}
 
 .vertical  ul  li{
   display: block;
@@ -100,12 +88,12 @@
 
 }
 .content  p{
-    margin-left: 315px;
-    margin-top: 40px;
-    font-size: 14px;
+  margin-left: 315px;
+  margin-top: 40px;
+  font-size: 14px;
 
-    line-height: 20px;
-    font-size: 14px;
+  line-height: 20px;
+  font-size: 14px;
 
 }
 
@@ -129,29 +117,29 @@
 }
 
 .footer ul li {
-   display: inline-block;
-   margin-left: 25px;
-   margin-right: 50px;
-   position: relative;
- }
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 50px;
+  position: relative;
+}
 
- .footer ul li a{
-   display: inline;
+.footer ul li a{
+  display: inline;
 
-   text-decoration: none;
-   font-size: 13px;
+  text-decoration: none;
+  font-size: 13px;
 
-   color: rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
 }
 
 .footer ul li:hover a {
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
 #copyright {
-   display: block;
-   float: right;
-   text-align:right;
-   font-size: 13px;
-   color: rgb(44, 44, 44);
+  display: block;
+  float: right;
+  text-align:right;
+  font-size: 13px;
+  color: rgb(44, 44, 44);
 }

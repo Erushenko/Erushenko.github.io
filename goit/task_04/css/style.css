@@ -8,10 +8,10 @@ a:link {
   color: rgba(18, 138, 167, 0.8);
 }
 
+
 a:visited {
   color: rgba(18, 138, 167, 0.8);
 }
-
 .header{
   /*position: relative;*/
 }
@@ -57,6 +57,7 @@ a:visited {
   width: 60px;
   display: inline-block;
   font-size: 12px;
+  text-align: center;
 }
 .photos{
   height: 236px;
@@ -76,7 +77,7 @@ div#menu {
   margin-top: -3px;
   padding: 0 0 0 65px;
   background-color: #343434;
-  box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
   border-bottom: 1px solid black;
   z-index: 4;
 }
@@ -85,6 +86,7 @@ div#menu {
   float: left;
   position: relative;
 }
+
 
 .menu li a {
   display: block;
@@ -125,6 +127,11 @@ div#menu {
 .menu li:hover .submenu   {
   display: block;
 }
+
+span{
+  font-size: 9px;
+}
+
 
  #container3 {
     float:left;
@@ -181,7 +188,7 @@ div#menu {
   font-size: 14px;
   font-family: "Tahoma";
   color: rgb(66, 76, 67);
-    
+
 }
 
 .footer {
