@@ -20,6 +20,8 @@
 }
 #navigation ul li {
   display: inline-block;
+  border-left: 1px solid rgb(90,90,90);
+  border-right: 1px solid rgb(90,90,90);
 }
 #navigation ul li a{
   padding-left: 25px;
@@ -37,8 +39,8 @@
 
 #navigation ul li:hover  {
   background-color: #3f3f3f;
-  border-left: 1px solid rgb(131,131,131);
-  border-right: 1px solid rgb(131,131,131);
+  border-left-color: rgb(131,131,131);
+  border-right-color: rgb(131,131,131);
 }
 #navigation ul li a:hover  {
   text-align: center;
