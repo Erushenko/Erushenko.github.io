@@ -22,24 +22,23 @@ console.log(pow(base,exponent));
 //
 // part 2
 var arrNames = [];
-var arrUserNames = [];
+var UserName;
 //
 for (var i=0;i<5;i++){
   arrNames.push( prompt('Введите любое имя:', "") );
 }
-for (var i=0;i<5;i++){
-  arrUserNames.push( prompt('Введите имя пользователя:', "") );
-}
+
+UserName =  prompt('Введите имя пользователя:', "");
+
 for (var i=0;i<5;i++){
   var findUser = false;
-  for (var j=0;j<5;j++){
-    if (arrNames[i] === arrUserNames[j]) {
-      findUser = true;
-    }
+  if (arrNames[i] === UserName) {
+    findUser = true;
   }
-  if (findUser) {
-    alert('' + arrNames[i] + ', вы успешно вошли.');
-  } else {
-    alert('' + arrNames[i] + ', не найдено такого пользователя.');
-  }
+}
+
+if (findUser) {
+  alert('' + UserName + ', вы успешно вошли.');
+} else {
+  alert('' + UserName + ', не найдено такого пользователя.');
 }
