@@ -1,21 +1,66 @@
 var createDOM = {
+
+  questions:[
+    {
+      title: 'Вопрос №1',
+      answers:[
+        {content:'Вариант ответа №1'},
+        {content:'Вариант ответа №2'},
+        {content:'Вариант ответа №3'}
+      ]
+    },
+    {
+      title: 'Вопрос №2',
+      answers:[
+        {content:'Вариант ответа №1'},
+        {content:'Вариант ответа №2'},
+        {content:'Вариант ответа №3'}
+      ]
+    },
+    {
+      title: 'Вопрос №3',
+      answers:[
+        {content:'Вариант ответа №1'},
+        {content:'Вариант ответа №2'},
+        {content:'Вариант ответа №3'}
+      ]
+    }
+
+  ],
   body: document.body,
-  curentUl: null,
-  addHElementInDOM: function(nameClass, type, context){
-    // debugger;
-    newElement = document.createElement(type);
-    newElement.innerHTML = context;
-    newElement.classList.add(nameClass);
-    this.body.appendChild(newElement);
+  createQuestions: function(){
+
+    //style to conteiner
+    var css = '.well {width:1000px; margin:auto;}',
+        head = document.head || document.getElementsByTagName('head')[0],
+        style = document.createElement('style');
+
+    style.type = 'text/css';
+    if (style.styleSheet){
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
+    head.appendChild(style);
+    //main container
+    divElement = document.createElement('div');
+    divElement.classList.add('well');
+    this.body.appendChild(divElement);
+    this.body = document.getElementsByClassName('well')[0];
+    //to creat content
+    this.addHElementInDOM('text-center','H1','Тест по программированию');
+    for (var i = 0; i < this.questions.length; i++) {
+      this.addQuestionInDOM(this.questions[i]);
+    }
+    this.addButtomElementInDOM('center-block','button','Проверить мои результаты');
   },
-  addButtomElementInDOM: function(nameClass, type, context){
-    newElement = document.createElement(type);
-    newElement.innerHTML = context;
-    newElement.setAttribute('type', 'submit');
-    newElement.classList.add(nameClass);
-    this.body.appendChild(newElement);
+  addQuestionInDOM: function(question){
+    this.addHElementInDOM('text-left','H2', question.title);
+    for (var i = 0; i < question.answers.length; i++) {
+      this.addAnswer(question.answers[i]);
+    }
   },
-  addAnswer: function(context){
+  addAnswer: function(answer){
     divElement = document.createElement('div');
     divElement.classList.add("checkbox");
     this.body.appendChild(divElement);
@@ -27,30 +72,21 @@ var createDOM = {
     inputElement.setAttribute('type','checkbox')
     inputElement.setAttribute('value','')
     labelElement.appendChild(inputElement);
-    //context qustion
-    labelElement.innerHTML += context;
+    //content qustion
+     labelElement.innerHTML += answer.content;
   },
-
-  addQuestionInDOM: function(context, arrAnswers){
-    this.addHElementInDOM('text-left','H2', context);
-    for (var i = 0; i < arrAnswers.length; i++) {
-      this.addAnswer(arrAnswers[i]);
-    }
+  addHElementInDOM: function(nameClass, type, context){
+    newElement = document.createElement(type);
+    newElement.innerHTML = context;
+    newElement.classList.add(nameClass);
+    this.body.appendChild(newElement);
   },
-
-  addQuestionAllInDOM: function(arrQuestions){
-    for (var i = 0; i < arrQuestions.length; i++) {
-      this.addQuestionInDOM(arrQuestions[i]);
-    }
+  addButtomElementInDOM: function(nameClass, type, context){
+    newElement = document.createElement(type);
+    newElement.innerHTML = context;
+    newElement.setAttribute('type', 'submit');
+    newElement.classList.add(nameClass);
+    this.body.appendChild(newElement);
   }
 }
-
-// debugger;
-
-createDOM.addHElementInDOM('text-center','H1','Тест по программированию');
-
-createDOM.addQuestionInDOM('1. Вопрос №1',['Вариант ответа №1','Вариант ответа №2','Вариант ответа №3']);
-createDOM.addQuestionInDOM('2. Вопрос №2',['Вариант ответа №1','Вариант ответа №2','Вариант ответа №3']);
-createDOM.addQuestionInDOM('3. Вопрос №3',['Вариант ответа №1','Вариант ответа №2','Вариант ответа №3']);
-
-createDOM.addButtomElementInDOM('center-block','button','Проверить мои результаты');
+createDOM.createQuestions();
