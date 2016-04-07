@@ -30,8 +30,8 @@ for (var i=0;i<5;i++){
 
 UserName =  prompt('Введите имя пользователя:', "");
 
+var findUser = false;
 for (var i=0;i<5;i++){
-  var findUser = false;
   if (arrNames[i] === UserName) {
     findUser = true;
   }
