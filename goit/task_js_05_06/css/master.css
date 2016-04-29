@@ -16,6 +16,7 @@ button{
   -webkit-box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.55);
   -moz-box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.55);
   box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.55);
+  margin: 2px;
 }
 
 button:hover{
