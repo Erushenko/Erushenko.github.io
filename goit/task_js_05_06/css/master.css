@@ -1,0 +1,23 @@
+body{
+  text-align: center;
+  margin-top: 200px;
+}
+
+#timer{
+  font-family: "Lato";
+  font-size: 100px;
+  font-weight: 500;
+}
+
+button{
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  -webkit-box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.55);
+  box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.55);
+}
+
+button:hover{
+  cursor: pointer;
+}
