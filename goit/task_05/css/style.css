@@ -1,5 +1,10 @@
-body{
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(../fonts/HelveticaNeue.ttf);
+   }
 
+body{
+font-family: Helvetica Neue;
 }
 
 .wrapper{
@@ -12,6 +17,7 @@ body{
   height: 1030px;
   position: relative;
   background-image: url("../img/background.jpg");
+  /*font-family: Helvetica Neue;*/
 }
 .clearfix:after {
   content:'';
@@ -66,3 +72,64 @@ body{
     vertical-align: middle;
     padding-left: 5px;
  }
+
+.register{
+  width: 560px;
+  height:620px;
+  background: rgba(15, 24, 29, 0.45);
+  margin: 18% 30%;
+  position: absolute;
+  color: white;
+}
+
+#f_auth input:not([type="checkbox"]),
+#f_auth a,
+.line{
+  display: block;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+	height: 35px;
+	margin: 3% auto;;
+  width: 250px;
+  color:#FFFFFF;
+  font-size: 15px;
+}
+.line{
+  margin: 20px auto;
+}
+#f_auth input[type="submit"]{
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid #4AA5D7;
+  background: #4AA5D7;
+  box-shadow: 1px 1px 2px rgba(57, 162, 245, 0.7) ;
+  cursor: pointer;
+}
+
+.bg_black{
+  background: black;
+  border: 1px solid black;
+  box-shadow: 0 2px  rgba(237, 243, 237, 0.23);
+}
+.bg_black:focus{
+  background: #1B5288;
+  border: 1px solid #1B5288;
+  box-shadow:  0 0 10px #A4C9EF;
+  }
+
+.line p{
+  font-size: 12px;
+  line-height: 1.2;
+}
+.check,
+.title{
+  text-align: center;
+}
+
+.title{
+  border-bottom: 3px solid rgb(255, 255, 249);
+  font-size: 20px;
+  padding: 18px;
+  margin-bottom: 30px;
+  }
