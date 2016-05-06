@@ -16,7 +16,7 @@ font-family: Helvetica Neue;
   width: 1215px;
   height: 1030px;
   position: relative;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/Background.jpg");
   /*font-family: Helvetica Neue;*/
 }
 .clearfix:after {
