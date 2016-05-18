@@ -1,6 +1,20 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .wrapper{
-  width: 910px;
+  width: 1000px;
   margin: 12px auto;
+  padding: 0 45px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .phones {
@@ -131,7 +145,7 @@ header nav span{
   font-size: 11px;
 }
 header nav img{
-  margin: 4px 0 0 53px;
+  margin: 4px 0 0 48px;
 }
 .case {
     margin: 4px 0 0 0 ;
@@ -182,40 +196,30 @@ main{
 .search-tires a,
 .search-wheels a{
   float: right;
-  margin:0 18px 11px 0;
+  margin:0 18px 9px 0;
   font-size: 14px;
   font-style: italic;
   }
 
 .search-title{
-  display: table;
   font-weight: 800;
 }
-.search-title .tit1,
-.search-title .tit2,
-.search-title .tit3{
-  display: table-cell;
-  float: left;
-}
+
 .search-title .tit1{
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 4px;
   font-size: 11px;
 }
 .search-title .tit2 {
-    margin-left: 64px;
-    margin-right: 73px;
-    margin-top: 1px;
-    font-size: 12px;
+    margin-left: 66px;
+    font-size: 14px;
 }
 .search-title .tit3 {
+    float: right;
     font-size: 11px;
-    margin-top: 3px;
-}
-.find-car,
-.find-tires,
-.find-wheels{
-  display: table;
+    margin-top: 2px;
+    margin-right: 20px;
+
 }
 
 .column-one,
@@ -256,7 +260,7 @@ main{
 .sel-model select,
 .sel-full select{
   min-width: 102px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .sel-year select{
@@ -264,11 +268,10 @@ main{
   margin-bottom: 4px;
 }
 .search-title .tit{
-  display: table-cell;
-  float: left;
-  margin-left: 9px;
-  margin-top: 3px;
-  font-size: 12px;
+/*  display: table-cell;
+*/  float: left;
+  margin-left: 10px;
+  font-size: 13px;
 }
 
 .tires-column-one,
@@ -310,11 +313,9 @@ main{
 }
 
 .search-title .wheel-tit{
-  display: table-cell;
   float: left;
-  margin-left: 9px;
-  margin-top: 3px;
-  font-size: 12px;
+  margin-left: 11px;
+  font-size: 13px;
 }
 
 .wheels-column-one, 
@@ -366,7 +367,7 @@ main{
 
 .catalog{
   float: left;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 .right-bar,
 .left-bar{
@@ -384,15 +385,16 @@ main{
 }
 .products img{
   float: left;
-  margin: 2px 4px 2px 2px;
+  margin: 1px 4px 2px 2px;
 }
 .products span{
-  line-height: 28px;
+  line-height: 26px;
   margin-right: 8px;
 }
 
 .base{
   margin-top: 13px;
+  list-style-type:none;
 }
 .base-first-level{
   height: 26px;
@@ -407,23 +409,23 @@ main{
   margin: 2px 4px;
 }
 .base-first-level span{
-  line-height: 28px;
+  line-height: 26px;
   margin-right: 8px;
 }
 .base-second-level {
   list-style-type: circle;
-  font-size: 12px;
+  font-size: 13px;
   margin-left:50px;
 }
 
 .base-second-level li{
-  margin: 5px 0 14px -2px;
+  margin: 4px 0 12px 1px;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
 .base-second-level .last-li{
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .base-second-level li:hover{
@@ -464,15 +466,15 @@ main{
 }
 
 .left-bar .base .base-second-level{
-  margin-left: 10px;  
+  margin-left: 15px;  
   list-style-type: none;
 }
 .left-bar .base .base-second-level li{
-  margin: 5px 0 6px -2px;
+  margin: 8px 0 0 -2px;
   cursor: auto;
 }
 .left-bar .base .base-second-level .last-li {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .btn{
@@ -482,7 +484,7 @@ main{
   border: none;
   margin-left: 20px;
   margin-top: 7px;
-  padding: 6px 13px 8px;
+  padding: 6px 10px 8px;
 }
 
 .main-content{
@@ -498,7 +500,7 @@ main{
 figure{
   float: left;
   width: 139px;
-  margin: 0 5px 25px 23px;
+  margin: 2px 7px 22px 22px;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   text-align: center;
 }
@@ -509,6 +511,7 @@ figcaption{
   color: #206988;
   font-weight: bold;
   text-decoration: none;
+  line-height: 0.7;
 }
 .discrb{
   font-size: 13px;

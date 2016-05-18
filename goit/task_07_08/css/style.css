@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: LeagueGothic;
+    src: url(../fonts/LeagueGothicRegular.ttf);
+   }
+
+body{
+font-family: LeagueGothic;
+}
+.wrapper{
+	width: 2400px;
+	position: relative;
+	overflow: hidden;
+}
+
+header {
+	height: 794px;
+	background: url(../img/mountains.jpg) top no-repeat;
+}
+nav{
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 68px;
+	position: relative;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	margin-right: 127px;
+	font-size: 46px;
+	text-shadow: 0 2px 1px #716C6C;
+}
+.logo__link{
+	color: white;
+	text-decoration: none;
+}
+.logo__link--purple{
+	color: #4C024C;
+/*	background: linear-gradient(#670567,#3E023E);
+*/	text-shadow: none;
+}
+.menu{
+	margin: 7px auto;
+	float: left; 
+}
+
+.menu__item{
+	display: inline-block;
+	font-size: 24px;
+	margin-left: 48px;
+	list-style: none;
+}
+
+.menu__link{
+	display: block;
+	color: white;
+	text-shadow: 0 2px 1px #716C6C;
+	text-decoration: none;
+}
+
+.slider{
+	height: 400px;
+	width: 960px;
+	color: white;
+	background: rgba(29, 28, 28, 0.15);
+}
+.slider__h1{
+
+}
+.slider__h3{
+	color: #DE7BDE;
+}
+
+@media (max-width: 768px){
+	.logo{
+		width: 100%;
+	}
+	.menu__item {
+    	margin-left: 0;
+    	margin-right: 48px;
+	}
+}
