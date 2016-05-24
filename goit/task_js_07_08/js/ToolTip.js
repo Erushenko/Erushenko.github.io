@@ -16,9 +16,10 @@ $(document).ready(function(){
   var name = 'tooltip';
   simple_tooltip(target_items,name);
   $('button').click(function(){
+    var elementsDiv  = $('fieldset div');
     $(target_items).each(function(i){
       var my_tooltip = $("#"+name+i);
-      my_tooltip.css({opacity:0.8, display:"block"}).fadeIn(400);
+      my_tooltip.css({left: elementsDiv.eq(i).offset().left + 275,top: elementsDiv.eq(i).offset().top,opacity:0.8, display:"block"}).fadeIn(400);
     });
   });
 });
