@@ -1,0 +1,92 @@
+
+p{
+  margin:10px;
+}
+.tabs_p2  div{
+  margin-top: 25px;
+  display: block;
+}
+label{
+  display: inline-block;
+  width: 5%;
+  padding-left: 20px;
+}
+fieldset{
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: threedface;
+}
+input{
+  margin-left: 10px;
+  padding: 1px 0px;
+}
+.tabs_p2{
+  padding-top: 100px;
+  width: 80%;
+  margin: 10%;
+}
+.tabs{
+  display:inline-block;
+  width: 80%;
+  margin-left:  10%;
+  margin-top:   5%;
+}
+.tabs > div{
+  padding-top:10px;
+}
+.tabs ul{
+  margin:0px;
+  padding:0px;
+}
+.tabs ul:after{
+  content:"";
+  display:block;
+  clear:both;
+  height:5px;
+  background:#46c765;
+}
+.tabs ul li{
+  margin:0px;
+  padding:0px;
+  cursor:pointer;
+  display:block;
+  float:left;
+  padding:10px 15px;
+  background:#e9eaeb;
+  color:#707070;
+}
+.tabs ul li.active, .tabs ul li.active:hover{
+  background:#46c765;
+  color:#fff;
+}
+.tabs ul li:hover{
+  background:#d6d6d7;
+}
+button{
+  width: 10%;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+button:hover {
+	cursor: pointer;
+}
+.tooltip{
+position:absolute;
+z-index:999;
+left:-9999px;
+background-color:#dedede;
+padding:5px;
+border:1px solid #fff;
+width:250px;
+}
+.tooltip p{
+margin:0;
+padding:0;
+color:#fff;
+background-color:#222;
+padding:2px 7px;
+}

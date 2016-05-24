@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabs</title>
+<!-- 	<link rel="stylesheet" href="css/CSSReset.css">
+  	<link rel="stylesheet" href="css/style.css" /> -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	.contacts{
+	margin: 5% 0;
+	background: white;
+	padding: 1%;
+	min-height: 390px;
+}
+
+/* tabs */
+ul{
+    -webkit-padding-start: 0px;
+}
+ul.tabs {
+	height: 25px;
+	line-height: 2.5;
+	margin:15px auto;
+	list-style: none;
+	max-width: 395px;
+}
+
+ul.tabs li {
+	float: left;
+	margin-right: 0px;
+}
+
+ul.tabs li a {
+	display: block;
+	padding: 0 13px 1px;
+	margin-bottom: -1px;
+	color: pink;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #EFEFEF;
+	border-radius: 2px;
+}
+
+ul.tabs li a:hover {
+	color: #00a8ac;
+}
+
+ul.tabs li.tab-current a{
+	color: #444;
+	border: 1px solid #EFEFEF;
+	border-bottom: 1px solid white;
+}
+div.t2, div.t3{
+	display: none;
+}
+.t1,.t2,.t3{
+	background: white;
+	margin: 0 auto;
+	max-width: 391px;
+}
+address{
+	padding: 5%;
+}
+
+#f_write_to_us input, 
+#f_write_to_us textarea{
+	width: 100%;
+	line-height: 2.5;
+	margin: 1% auto;
+}
+/* end tabs */
+</style>
+
+<div id="conct" class="contacts">
+	<ul class="tabs tabs1">
+  		<li class="t1 tab-current"><a>Наш адрес</a></li>
+  		<li class="t2"><a>Время работы</a></li>
+  		<li class="t3"><a>Обратная связь</a></li>
+	</ul>
+	<div class="t1">
+  		 <address>
+	  		 <p><strong>Студия красоты "Изюминка"</strong></p>
+	  		 <p>г. Киев, Оболонский пропект, 34</p>
+	  		 <p>Салон находится в непосредственной близости от м. Минская, либо м. Героев Днепра.</p>
+	  		 <p>093 3616192</p>
+	  		 <p>044 3616192</p>
+  		</address>
+	</div>
+	<div class="t2">
+ 		<address>
+ 			<p><strong>Студия красоты "Изюминка"</strong></p>
+	  		 <p>Работает</p>
+	  		 <p>с 7.00 утра</p>	 
+	  		 <p>и до </p>
+	  		 <p>последнего клиента</p>
+	  	</address>
+	</div>
+	<div class="t3">
+ 		<address>
+ 			<form id="f_write_to_us" class="pure-form pure-form-stacked" autocomplete="off">
+ 				<input name="wr_name" type="text" placeholder="Имя" class="rfield">
+ 				<input name="wr_email" type="email" placeholder="Email" class="rfield">
+ 				<textarea name="wr_message" placeholder="Ваше сообщение" class="rfield"></textarea>
+ 				<button type="botton" class="pure-button pure-button-primary button-xlarge" onclick="generalSendForms('sendContact.php', '#f_write_to_us', 'Ваше письмо успешно отправлено')">
+ 						Отправить
+ 				</button>
+ 			</form>
+ 		</address>		
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('ul.tabs li').css('cursor', 'pointer');
+
+	$('ul.tabs.tabs1 li').click(function(){
+  		var thisClass = this.className.slice(0,2);
+  		$('div.t1').hide();
+  		$('div.t2').hide();
+  		$('div.t3').hide();
+  		$('div.' + thisClass).show();
+  		
+  		$('ul.tabs.tabs1 li').removeClass('tab-current');
+  		$(this).addClass('tab-current');
+  });
+});
+</script>
+</html>
