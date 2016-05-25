@@ -7,7 +7,7 @@ function simple_tooltip(target_items, name){
     }).mousemove(function(kmouse){
       my_tooltip.css({left:kmouse.pageX+15, top:kmouse.pageY+15});
     }).mouseout(function(){
-      my_tooltip.fadeOut(400);
+      my_tooltip.stop(true,true).fadeOut(400);
     });
   });
 }
