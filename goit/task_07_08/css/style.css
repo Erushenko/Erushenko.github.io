@@ -373,7 +373,6 @@ nav{
 .info--next{
 	height: 396px;
 	background: #ececec;
-	/*box-shadow: 2px 0 3px #b4b3b8;*/
 }
 .info--next .three-col{
 	text-shadow: none;
@@ -543,11 +542,14 @@ footer{
 	.right-title{
 		font-size: 29px;
 	}
+	.right__text-bold {
+    	font-size: 16px;
+    }
 	.six-col__1, 
 	.six-col__2, 
 	.six-col__3, 
 	.six-col__4{
-    	margin-right: 55px;
+    	margin-right: 50px;
 	}
 	.six-col__5{
 		margin-right: 40px;
@@ -555,6 +557,14 @@ footer{
 	.six-col__1 {
     	margin-left: 3px;
 	}
+	.six-col__4{
+		margin-left: 8px;
+	} 
+	.six-col__6 {
+		margin:0;
+	}
+
+
 	.info--next .three-col__first,
 	.info--next .three-col__second	{
 		margin:0 48px 0 0;
@@ -708,13 +718,13 @@ footer{
 	.six-col__4, 
 	.six-col__5, 
 	.six-col__6 {
-    	width: auto;
     	margin: 0 51px 25px 0;
 	}
-	.six-col__3,
+	.six-col__5,
 	.six-col__4,
 	.six-col__5{
-		margin-right: 40px;
+		margin-right: 55px;
+		margin-left: -16px;
 	}
 
 
@@ -736,14 +746,17 @@ footer{
 		height: 200px;
 	}
 	.footer{
-		padding-left: 10px;
-		height: 100%
+		padding-top: 50px;
+	}
+	.menu--footer {
+    	margin-left: 0;
 	}
 	.menu--footer .menu__item{
-		margin-right: 1px;
+		margin-right: 21px;
 	}
+
 	.logo--footer {
-	    margin: 30px 153px;
+	    margin: 30px 151px;
 	}
 }
 
@@ -874,6 +887,6 @@ footer{
 		display: none;
 	}
 	.logo--footer {
-    margin: -13px 73px;
+    margin: -13px 73px 0 0;
 }
 }
