@@ -3,8 +3,10 @@
 	padding: 0;
 }
 @font-face {
-    font-family: LeagueGothic;
+    font-family: 'LeagueGothic';
+    src: url(../fonts/LeagueGothicRegular.eot);
     src: url(../fonts/LeagueGothicRegular.ttf);
+    
    }
 
 .clearfix:after{
@@ -14,7 +16,7 @@
 }
 
 body{
-font-family: LeagueGothic;
+font-family: 'LeagueGothic';
 }
 .wrapper{
 	max-width: 2400px;
@@ -37,9 +39,14 @@ header {
 	display: block;
 	text-align: center;
 	}
-.menu__dropdown{ display: none; }
+.menu__dropdown{ 
+	display: none; 
+}
+
 .menu__dropdown .menu__item{
-	padding: 10px 0 6px 0;  
+	padding: 10px 0 6px 0; 
+	border-bottom: 1px solid black; 
+	border-top: 1px solid #6f4a7e; 
 	}
 nav{
 	width: 960px;
@@ -124,7 +131,7 @@ nav{
 }
 .two-col__text{
     margin-top: 5px;
-    font-family: Open Sank Light, Ubuntu Light, sans-serif;
+    font-family: Open Sans Light, Ubuntu Light, sans-serif;
     font-size: 18px;
     line-height: 24px;
 }
@@ -362,7 +369,7 @@ nav{
 .six-col__5,
 .six-col__6{
 	display: inline-block;
-	margin-right: 65px;
+	margin-right: 60px;
 }
 .six-col__1{
 	margin-left: 94px;
@@ -435,7 +442,7 @@ footer{
 	font-weight: 900;
 }
 
-@media (max-width: 768px){
+@media (max-width: 960px){
 	header {
 		height: 797px;
 	}
@@ -575,7 +582,7 @@ footer{
 	}
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
 	header {
 		height: 550px;
 	}
@@ -611,19 +618,11 @@ footer{
 		margin:0;
 	}
 	.menu--dropdown .menu__item:hover{
-		border-bottom: 1px solid black; 
-		border-top: 1px solid #6f4a7e;
+		border-radius: 15px;
+		background: rgba(51, 29, 62, 0.69);
 	}
 	.menu--dropdown .menu__item:hover .menu__dropdown{
 		display: block;
-	}
-	.menu--dropdown .menu__item:hover .menu--dropdown{
-		border-radius: 15px;
-		background: rgba(51, 29, 62, 0.69);
-	}
-	.menu--dropdown .menu__item:focus .menu--dropdown{
-		border-radius: 15px;
-		background: rgba(51, 29, 62, 0.69);
 	}
 	.menu__dropdown .menu__item:hover{
 		background: rgba(51, 29, 62, 0.69);
@@ -760,7 +759,7 @@ footer{
 	}
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
 	header {
 		height: 515px;
 	}
@@ -890,3 +889,9 @@ footer{
     margin: -13px 73px 0 0;
 }
 }
+@media (max-width: 320px){
+	.wrapper{
+		overflow: scroll;
+	}
+}
+
