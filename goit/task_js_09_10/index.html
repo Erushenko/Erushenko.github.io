@@ -4,14 +4,19 @@
   <!-- Shared assets -->
   <link rel="stylesheet" href="css/CSSReset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/checkboxe.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
   <!-- Example assets -->
   <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
   <link rel="stylesheet" href="css/jqtransform.css" type="text/css" media="all" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+  <script type="text/javascript" src="js/jquery.color.js"></script>
   <script type="text/javascript" src="js/jcarousel.basic.js"></script>
 
   <script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+  <script type="text/javascript" src="js/checkboxe.js"></script>
+  <script type="text/javascript" src="js/checkboxe_js.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
   <meta charset="UTF-8">
@@ -65,6 +70,70 @@
           <option value="opt7">Option 7</option>
           <option value="opt8">Option 8</option>
         </select>
+      </div>
+    </form>
+  </div>
+  <div class="select">
+    <div>
+      <h1>This is a simple slide down nav menu using jQuery and CSS</h1>
+      <nav>
+          <ul class="content clearfix">
+              <li><a href="#">Nav 1</a></li>
+              <li><a href="#">Nav 2</a></li>
+              <li class="dropdown">
+                  <a href="#">Nav 3</a>
+                  <ul class="sub-menu">
+                      <li><a href="#">Nav 3.1</a></li>
+                      <li><a href="#">Nav 3.2</a></li>
+                      <li><a href="#">Nav 3.3</a></li>
+                      <li class="dropdown">
+                          <a href="#">Nav 3.4</a>
+                          <ul class="sub-menu">
+                              <li><a href="#">Nav 3.4.1</a></li>
+                              <li class="dropdown">
+                                  <a href="#">Nav 3.4.2</a>
+                                  <ul class="sub-menu">
+                                      <li><a href="#">Nav 3.4.2.1</a></li>
+                                      <li><a href="#">Nav 3.4.2.2</a></li>
+                                      <li><a href="#">Nav 3.4.2.3</a></li>
+                                      <li><a href="#">Nav 3.4.2.4</a></li>
+                                      <li><a href="#">Nav 3.4.2.5</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">Nav 3.4.3</a></li>
+                              <li><a href="#">Nav 3.4.4</a></li>
+                              <li><a href="#">Nav 3.4.5</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Nav 3.5</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Nav 4</a></li>
+              <li><a href="#">Nav 5</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <h1>Checkboxe</h1>
+    <p>1. With jQuery:</p>
+    <form class="checkboxes" action="#">
+      <div><label for="ch1">label 1</label><input type="checkbox" class="niceCheck"  id="ch1" tabindex="1" value="1" /></div>
+      <div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
+      <div><label for="ch3">label 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div>
+    </form>
+    <p>2. With JavaScript:</p>
+    <form class="checkboxes_css" action="#">
+      <div>
+        <label>Label 1</label>
+        <span class="niceCheck" onclick="changeCheck_js(this)" id="niceCheckbox_1"><input type="checkbox"  /></span>
+      </div>
+      <div>
+        <label>Label 2</label>
+        <span  class="niceCheck" onclick="changeCheck_js(this)" id="niceCheckbox_2"><input type="checkbox"  checked="checked" /></span>
+      </div>
+      <div>
+        <label>Label 3</label>
+        <span  class="niceCheck niceCheckDisabled" onclick="changeCheck_js(this)" id="niceCheckbox_3"><input type="checkbox"  checked="checked" /></span>
       </div>
     </form>
   </div>
