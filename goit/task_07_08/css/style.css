@@ -171,6 +171,7 @@ nav{
 
 .info{
 	height: 340px;
+	background: -moz-linear-gradient(#735082,#3c2b44);
 	background: linear-gradient(#735082,#3c2b44);
 	border:1px solid black;
 }
@@ -253,7 +254,7 @@ nav{
 
 .left{
 	float: left;
-	width: 50%;
+	width: 48%;
 }
 
 .left__comment{
@@ -300,7 +301,7 @@ nav{
 .slider-nav--white .slider-nav__circle{
 	float: none;
     margin: 32px auto;
-    width: 100px;
+    width: 102px;
 }
 .slider-nav--white .circle-1,
 .slider-nav--white .circle-3,
@@ -318,8 +319,8 @@ nav{
 }
 .right{
 	float: right;
-	width: 50%;
-	padding: 130px 0 0 29px;
+	width: 48%;
+	padding: 130px 0 0 9px;
 	box-sizing: border-box;
 	color: #454545;
 }
