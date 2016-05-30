@@ -1,35 +1,24 @@
 $(document).ready(function(){
+  $().jcarousel();
+
   $(function(){
-    $("form.jqtransform").jqTransform();
-  });
-  $(".checkboxes .niceCheck").each(
-    /* при загрузке страницы меняем обычные на стильные checkbox */
-    function() {
-      changeCheckStart($(this));
-    }
-  );
-  // css checkbox
-  (function(){
-    startCheck_js();
-  })();
-
-  // menu
-  $( '.dropdown' ).hover(
-      function(){
-          $(this).children('.sub-menu')
-            .slideDown(200)
-            .animate({
-                      backgroundColor: "#abcdef"
-              }, 50 );
-      },
-      function(){
-          $(this).children('.sub-menu')
-          .slideUp(200)
-          .animate({
-                    backgroundColor: "#c83232"
-            }, 50 );
-      }
-  );
-
-
+    var html  = $('#test').html();
+    var data = {
+        h1_FIO: "Ерушенко Дмитрий Викторович",
+        img: '"../task_01/MyPhoto.png" ',
+        p1:'Ведущий разработчик ПО 1С',
+        p2:'Хочу учить фронтенд, потому что:',
+        ulList: [
+          '<li>работать в перспективной профессии</li>',
+          '<li>получить опыт работы с иностранными закачиками</li>',
+          '<li>нравятся интернет технологии</li>'
+        ],
+        pTel:'+380503476416',
+        pInfoFacebook:'мой профиль в Facebook: ',
+        refFacebook:'https://www.facebook.com/erushenko'
+    };
+  // debugger
+    var content = tmpl(html,data);
+    $('.wrapper').append(content);
+  });  
 });
