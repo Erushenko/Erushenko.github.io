@@ -6,7 +6,7 @@
     font-family: 'LeagueGothic';
     src: url(../fonts/LeagueGothicRegular.eot);
     src: url(../fonts/LeagueGothicRegular.ttf);
-    
+
    }
 
 .clearfix:after{
@@ -39,14 +39,14 @@ header {
 	display: block;
 	text-align: center;
 	}
-.menu__dropdown{ 
-	display: none; 
+.menu__dropdown{
+	display: none;
 }
 
 .menu__dropdown .menu__item{
-	padding: 10px 0 6px 0; 
-	border-bottom: 1px solid black; 
-	border-top: 1px solid #6f4a7e; 
+	padding: 10px 0 6px 0;
+	border-bottom: 1px solid black;
+	border-top: 1px solid #6f4a7e;
 	}
 nav{
 	width: 960px;
@@ -69,7 +69,7 @@ nav{
 }
 .menu{
 	margin: 7px auto;
-	float: right; 
+	float: right;
 	width: auto;
 }
 
@@ -153,9 +153,9 @@ nav{
 	margin-right: 165px;
     margin-top: 95px;
 }
-.circle-1, 
-.circle-2, 
-.circle-3, 
+.circle-1,
+.circle-2,
+.circle-3,
 .circle-4{
 	height: 15px;
 	width: 15px;
@@ -177,7 +177,7 @@ nav{
 }
 .three-col{
 	text-shadow: 0 2px 1px #383030;
-	padding-top: 80px; 
+	padding-top: 80px;
 }
 .three-col__first,
 .three-col__second,
@@ -189,7 +189,7 @@ nav{
 .three-col__first{
 	margin-right: 5%;
 }
-.three-col__second{	
+.three-col__second{
 	margin-right: 4%;
 }
 .three-col__third{
@@ -546,6 +546,7 @@ footer{
 	}
 	.right{
     	padding: 132px 0 0 20px;
+			width: 49%;
    	}
 	.right-title{
 		font-size: 29px;
@@ -553,9 +554,9 @@ footer{
 	.right__text-bold {
     	font-size: 16px;
     }
-	.six-col__1, 
-	.six-col__2, 
-	.six-col__3, 
+	.six-col__1,
+	.six-col__2,
+	.six-col__3,
 	.six-col__4{
     	margin-right: 50px;
 	}
@@ -567,7 +568,7 @@ footer{
 	}
 	.six-col__4{
 		margin-left: 8px;
-	} 
+	}
 	.six-col__6 {
 		margin:0;
 	}
@@ -599,7 +600,7 @@ footer{
 		box-sizing: border-box;
 	}
 	.logo{
-		text-align: center;	
+		text-align: center;
 	}
 	.logo__link{
 		margin-right:20px;
@@ -615,7 +616,7 @@ footer{
 	}
 	.menu--dropdown .menu__item{
 		font-size: 23px;
-		padding-top: 13px;  
+		padding-top: 13px;
 		margin:0;
 	}
 	.menu--dropdown .menu__item:hover{
@@ -627,7 +628,7 @@ footer{
 	}
 	.menu__dropdown .menu__item:hover{
 		background: rgba(51, 29, 62, 0.69);
-		border-bottom: 2px solid #DE7BDE; 
+		border-bottom: 2px solid #DE7BDE;
 	}
 	.slider{
 		height: 245px;
@@ -640,7 +641,7 @@ footer{
 	.two-col__title {
     	font-size: 34px;
     	margin-top: 64px;
-	}	
+	}
 	.two-col__sub-title {
 	    font-size: 18px;
 	    padding-top: 4px;
@@ -672,8 +673,8 @@ footer{
 	.three-col__link {
     	margin: 19px 15px;
 	}
-	.three-col__first, 
-	.three-col__second, 
+	.three-col__first,
+	.three-col__second,
 	.three-col__third {
 	    width: 95%;
 	    padding: 0 0 6px 10px;
@@ -703,7 +704,7 @@ footer{
     	width: 100%;
 	}
 	.right__link {
-	    margin: 6px 65px;	
+	    margin: 6px 65px;
 	   }
 	.logos{
 		height: 230px;
@@ -712,11 +713,11 @@ footer{
 	    padding: 35px 0 0 83px;
 	    box-sizing: border-box;
 	}
-	.six-col__1, 
-	.six-col__2, 
-	.six-col__3, 
-	.six-col__4, 
-	.six-col__5, 
+	.six-col__1,
+	.six-col__2,
+	.six-col__3,
+	.six-col__4,
+	.six-col__5,
 	.six-col__6 {
     	margin: 0 51px 25px 0;
 	}
@@ -799,8 +800,8 @@ footer{
 		height: 72px;
 		overflow: hidden;
 	}
-	.three-col__first, 
-	.three-col__second, 
+	.three-col__first,
+	.three-col__second,
 	.three-col__third {
 	    width: 90%;
 	    padding: 0 0 6px 10px;
@@ -818,7 +819,7 @@ footer{
 	    height: 220px;
 	}
 	.left__text {
-     margin:0; 
+     margin:0;
 }
 	.photo {
 	    top: 24px;
@@ -840,14 +841,14 @@ footer{
     width: 180px;
     height: 18px;
     text-overflow: clip;
-    overflow: hidden;  
+    overflow: hidden;
 }
 	.right__text{
 	    width: 180px;
 	    height: 16px;
 	    margin-top: 8px;
 	    text-overflow: clip;
-	    overflow: hidden;  
+	    overflow: hidden;
 	}
 	.right__link {
     	margin: 2px 25px;
@@ -859,21 +860,21 @@ footer{
 	.six-col {
     	padding: 53px 0 0 63px;
 	}
-	.six-col__1, 
+	.six-col__1,
 	.six-col__2{
     	width: auto;
     	margin: 0 51px 57px 0;
 	}
 	.six-col__3{
 		margin: 0 50px 41px 8px;
-	} 
+	}
 
 	.six-col__4{
 		margin: 0 40px 41px 8px;
-	} 
+	}
 	.six-col__5{
 		margin: -10px 30px 41px -27px;
-	} 
+	}
 	.six-col__6 {
 		margin: 0 0 69px 13px;
 	}
@@ -895,4 +896,3 @@ footer{
 		overflow: scroll;
 	}
 }
-

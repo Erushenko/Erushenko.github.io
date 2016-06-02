@@ -1,0 +1,29 @@
+$bgcolor: #000;
+$color:   #fff;
+$width:   1160px;
+$font:    'Ubuntu Medium', arial;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+body{
+  background: $bgcolor;
+  color: $color;
+  font: $font;
+}
+.wrapper{
+  width: $width;
+}
+.logo{
+  float: left;
+}
+.menu{
+  float: right;
+}
