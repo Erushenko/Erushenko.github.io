@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Shared assets -->
+  <link rel="stylesheet" href="css/CSSReset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Example assets -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- <script type="text/javascript" src="lib/jasmine.js"></script> -->
+  <script type="text/javascript" src="js/template.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <title>Home work JS 13-14! </title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Test</h1>
+    <div id="templateTest">
+      <script type="text/tmpl" id="test">
+      <h2 ><%= title %></h2>
+      <ul>
+      <% for (var i = 0; i < answers.length; i++) {%>
+        <li>
+        <label><input type="radio" class="question" name = <%= name %>  value = <%= answers[i].answer %>  ><%= answers[i].content %></label>
+        </li>
+        <%}%>
+        </ul>
+        </script>
+        <script type="text/tmpl" id="resultTmpl">
+          <% for (var i = 0; i < answers.length; i++) {%>
+            <p class ="answer" > <%= answers[i].titleQuestion %>:
+                <% if (answers[i].answerTrue) { %>
+                <%=' Верный ответ' %>
+              <% } else { %>
+                <%=' Ответ не верный' %>
+              <% } %>  </p>
+          <%}%>
+        </script>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">X</span>
+            <h2>Результат тестирования: </h2>
+          </div>
+          <div class="modal-body">
+          </div>
+          <!-- <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+<div class="footer">
+<button id="checkResult">Проверить мои результаты</button>
+</div>
+  </body>
+  </html>
