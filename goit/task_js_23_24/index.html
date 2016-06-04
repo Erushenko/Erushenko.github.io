@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Shared assets -->
+  <link rel="stylesheet" href="css/CSSReset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Example assets -->
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+ <script data-main="js/script" src="js/require.js"></script>
+  <!-- <script type="text/javascript" src="js/template.js"></script>
+  <script type="text/javascript" src="js/model.js"></script>
+  <script type="text/javascript" src="js/view.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script type="text/javascript" src="js/script.js"></script> -->
+  <meta charset="UTF-8">
+  <title>Home work JS 23-24! </title>
+</head>
+<body>
+  <h1>List ToDo:</h1>
+  <script type="text/tmpl" id="wrapper-template">
+  <div class="wrapper">
+    <ul class="item-list"></ul>
+    <div class="controlls">
+      <input type="text" class="item-value"/>
+      <button class="item-add">add</button>
+    </div>
+  </div>
+  </script>
+  <script type="text/tmpl" id="list-template">
+  <% for (var i = 0; i < data.length; i++) {%>
+    <li><%= data[i] %> <span data-value ="<%= data[i] %>" class="item-delete">X</span> </li>
+    <%};%>
+    </script>
+  </body>
+  </html>

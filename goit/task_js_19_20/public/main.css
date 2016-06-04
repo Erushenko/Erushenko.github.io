@@ -180,12 +180,10 @@ nav,
   text-decoration: none;
   color: #000; }
 
-.three-col__link:hover,
-.strelka:hover {
+.read:hover .strelka {
+  background-position: -13px center; }
+.read:hover .three-col__link {
   color: #248cec; }
-
-.three-col__link:hover .strelka {
-  background-position: -13px 0; }
 
 .strelka {
   width: 10px;
@@ -193,22 +191,17 @@ nav,
   background: url(../img/strelka.png) 0 center no-repeat;
   margin-left: 75px; }
 
-.strelka:hover {
-  background-position: -11px center;
-  cursor: pointer; }
-
-.strelka:hover .three-col__link {
-  color: #248cec; }
-
 .galery {
   background: #2a2d32; }
 
 .galery__title {
   color: #fff;
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 48px 0; }
 
 .photo {
-  float: left; }
+  float: left;
+  width: 300px; }
 
 .sign {
   text-align: center;
@@ -234,5 +227,16 @@ nav,
 
 .img4 {
   background: url(../img/services.png) -783px 0 no-repeat; }
+
+.photo:hover .img1 {
+  background: url(../img/services.png) 0 260 no-repeat; }
+.photo:hover .img2 {
+  background: url(../img/services.png) -261px 260 no-repeat; }
+.photo:hover .img3 {
+  background: url(../img/services.png) -522px 260 no-repeat; }
+.photo:hover .img4 {
+  background: url(../img/services.png) -783px 260 no-repeat; }
+.photo:hover .sign {
+  color: #f4b60d; }
 
 /*# sourceMappingURL=main.css.map */

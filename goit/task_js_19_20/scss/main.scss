@@ -197,12 +197,13 @@ nav,
 	color: $color;
 }
 
-.three-col__link:hover,
-.strelka:hover{
-	color: #248cec;
-}
-.three-col__link:hover .strelka{
-	background-position: -13px 0;
+.read:hover{
+	.strelka{
+		background-position: -13px center;
+	}
+	.three-col__link{
+		color: #248cec;
+	}
 }
 .strelka{
 	width: 10px;
@@ -210,30 +211,25 @@ nav,
 	background: url(../img/strelka.png) 0 center no-repeat;
 	margin-left: 75px
 	}
-.strelka:hover{
-	background-position: -11px center;
-	cursor: pointer;
-}
-.strelka:hover .three-col__link{
-	color: #248cec;
-}
+
+
 .galery{
 	background: #2a2d32;
+}
+.galery__photo{
 
 }
 .galery__title{
 	color: $bgcolor;
 	font-size: 20px;
+	margin: 48px 0;
 }
-.galery__photo{
 
-}
 .photo{
 	float: left;
+	width: 300px;
 }
-.photo:hover{
 
-}
 .sign{
 	text-align: center;
 	color: $bgcolor;
@@ -258,4 +254,21 @@ nav,
 }
 .img4{
 	background: url(../img/services.png) -783px 0 no-repeat;
+}
+.photo:hover {
+	.img1{
+		background: url(../img/services.png) 0 260 no-repeat;
+	}
+	.img2{
+		background: url(../img/services.png) -261px 260 no-repeat;
+	}
+	.img3{
+		background: url(../img/services.png) -522px 260 no-repeat;
+	}
+	.img4{
+		background: url(../img/services.png) -783px 260 no-repeat;
+	}
+	.sign{
+		color: #f4b60d;
+	}
 }
