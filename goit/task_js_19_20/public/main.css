@@ -13,14 +13,21 @@ body {
   font-family: "Ubuntu Medium", arial; }
 
 .wrapper,
-.galery {
-  width: 1920px;
+.galery,
+.news,
+.logos,
+footer {
+  max-width: 1920px;
+  overflow: hidden;
   margin: 0 auto; }
 
 nav,
 .slider,
+.two-col,
 .three-col,
-.galery__photo {
+.galery__photo,
+.partners,
+.footer {
   width: 1160px;
   margin: 0 auto; }
 
@@ -131,9 +138,17 @@ nav,
   background: url(../img/search.png) center no-repeat; }
 
 .slider {
-  margin-top: 40px; }
+  margin-top: 40px;
+  position: relative; }
 
-.info {
+.slogan {
+  z-index: 10000;
+  bottom: 40px;
+  left: 35px;
+  position: absolute; }
+
+.info,
+.galery {
   margin-top: 70px; }
 
 .three-col__info {
@@ -180,9 +195,12 @@ nav,
   text-decoration: none;
   color: #000; }
 
-.read:hover .strelka {
+.link {
+  margin-bottom: 50px; }
+
+.link:hover .strelka {
   background-position: -13px center; }
-.read:hover .three-col__link {
+.link:hover .three-col__link {
   color: #248cec; }
 
 .strelka {
@@ -194,27 +212,35 @@ nav,
 .galery {
   background: #2a2d32; }
 
+.galery__photo,
+.two-col,
+.footer {
+  width: 1200px; }
+
 .galery__title {
   color: #fff;
   font-size: 20px;
-  margin: 48px 0; }
+  padding: 48px 0;
+  box-sizing: border-box; }
 
 .photo {
   float: left;
-  width: 300px; }
+  width: 260px;
+  margin-right: 40px; }
 
 .sign {
   text-align: center;
   color: #fff;
   font-size: 15px;
-  font-family: "Ubuntu Condensed", arial; }
+  font-family: "Ubuntu Condensed", arial;
+  margin: 35px 0 70px 0; }
 
 .img1,
 .img2,
 .img3,
 .img4 {
-  width: 260px;
-  height: 260px; }
+  width: 261px;
+  height: 261px; }
 
 .img1 {
   background: url(../img/services.png) 0 0 no-repeat; }
@@ -228,15 +254,131 @@ nav,
 .img4 {
   background: url(../img/services.png) -783px 0 no-repeat; }
 
-.photo:hover .img1 {
-  background: url(../img/services.png) 0 260 no-repeat; }
-.photo:hover .img2 {
-  background: url(../img/services.png) -261px 260 no-repeat; }
-.photo:hover .img3 {
-  background: url(../img/services.png) -522px 260 no-repeat; }
-.photo:hover .img4 {
-  background: url(../img/services.png) -783px 260 no-repeat; }
-.photo:hover .sign {
-  color: #f4b60d; }
+.photo:hover {
+  cursor: pointer; }
+  .photo:hover .img1 {
+    background: url(../img/services.png) 0 -261px no-repeat; }
+  .photo:hover .img2 {
+    background: url(../img/services.png) -261px -261px no-repeat; }
+  .photo:hover .img3 {
+    background: url(../img/services.png) -522px -261px no-repeat; }
+  .photo:hover .img4 {
+    background: url(../img/services.png) -783px -261px no-repeat; }
+  .photo:hover .sign {
+    color: #f4b60d; }
+
+.news {
+  background: #f7f7f7; }
+
+.left,
+.right {
+  float: left;
+  width: 570px;
+  margin-right: 30px;
+  margin-bottom: 80px; }
+
+.two-col__title {
+  font-size: 20px;
+  padding: 60px 0; }
+
+.new {
+  margin-bottom: 30px; }
+
+.image {
+  float: left;
+  margin-right: 30px;
+  position: relative; }
+
+.date {
+  top: 10px;
+  left: -20px;
+  position: absolute; }
+
+.left__title {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #000;
+  cursor: pointer; }
+
+.left__title:hover {
+  color: #248cec; }
+
+.left__subtitle {
+  font-family: "Ubuntu", arial;
+  font-size: 14px;
+  color: #8a8a8a;
+  line-height: 2; }
+  .left__subtitle span {
+    color: #248cec; }
+
+.left__text {
+  font-family: "Ubuntu", arial;
+  font-size: 14px;
+  color: #8a8a8a;
+  margin-top: 30px; }
+
+.panel {
+  margin-bottom: 5px; }
+
+.p1,
+.p2 {
+  float: left;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 12px 12px;
+  font-family: Arial;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box; }
+
+.p2 {
+  width: 530px;
+  text-align: left; }
+
+.panel--active .p1,
+.panel--active .p2 {
+  color: #fff;
+  background: #f4b60d;
+  border: none; }
+.panel--active .p1 {
+  border-right: 1px solid #f6c53d; }
+
+.panel__text {
+  color: #8a8a8a;
+  font-family: "Ubuntu", arial;
+  font-size: 14px;
+  padding: 60px 0 40px 37px; }
+
+.logos {
+  border-bottom: 1px solid #2a2d32; }
+
+.partners {
+  margin: 90px auto; }
+
+footer {
+  background: #2a2d32; }
+
+.menu--footer {
+  color: #fff;
+  padding: 60px 0 80px 0; }
+  .menu--footer .menu__item {
+    display: inline-block;
+    width: 260px;
+    margin: 0 35px 0 0; }
+
+.menu__dropdown {
+  margin-top: 35px; }
+  .menu__dropdown .menu__item {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #828385;
+    margin: 0; }
+  .menu__dropdown .menu__link {
+    color: #828385;
+    font-family: "Ubuntu", arial;
+    text-decoration: none; }
+  .menu__dropdown .menu__link:hover {
+    color: #248cec; }
 
 /*# sourceMappingURL=main.css.map */

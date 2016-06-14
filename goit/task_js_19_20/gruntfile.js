@@ -11,11 +11,18 @@ module.exports = function(grunt) {
           ext: '.css'
         }]
       }
+    },
+    watch:{
+      sass:{
+        files:['scss/*.scss'],
+        tasks:['sass']
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['sass','watch']);
 
 };
