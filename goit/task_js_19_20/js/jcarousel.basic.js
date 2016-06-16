@@ -1,6 +1,9 @@
 (function($) {
     $(function() {
         $('.jcarousel').jcarousel();
+
+
+
         $('.jcarousel-pagination').jcarouselPagination({
             'item': function(page, carouselItems) {
                 return '<a href="#' + page + '"> &nbsp</a>';
@@ -14,5 +17,6 @@
                 $(this).removeClass('active');
             })
             .jcarouselPagination();
-    });
+
+  });
 })(jQuery);

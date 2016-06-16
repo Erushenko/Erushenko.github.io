@@ -275,6 +275,7 @@ var dataJSON =  [
   }
 ];
 
+
 // 1. Массив скиллов (поле skills) всех людей,
 //   не должно быть повторяющихся скиллов,
 //   так же они должны быть отсортированы по алфавиту;
@@ -283,7 +284,7 @@ _(dataJSON).forEach(function(value) {
   arrayConcat = _.concat(arrayConcat, value.skills);
 });
 var arrayUnion = _.union(arrayConcat);
-var arraySort = _.sortBy(arrayUnion);
+var arraySort = _.sortBy(arrayUnion,function (i) { return i.toLowerCase(); });
 console.log('Массив скиллов: ', arraySort);
 
 
