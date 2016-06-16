@@ -1,0 +1,30 @@
+.grid {
+  max-width: 940px;
+}
+
+/* clearfix */
+.grid:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  float: left;
+overflow: hidden;
+  width: 300px;
+  height: 310px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  background: #D26;
+  background-size: contain;
+}
+
+.grid-item--width2 { width: 620px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
