@@ -21,14 +21,7 @@
                 // 	'backgroundRepeat': 'no-repeat',
                 // 	'backgroundPosition': 'top center'
               });
-              // var $img = $('.grid__item--'+(i+1)+' .grid__item-img');
-              // if (data.hits[i]) {
-              // 	$img[0].src = data.hits[i].webformatURL;
-              // 	$img.parent().find('.grid__caption').html(data.hits[i].tags);
-              // } else {
-              // 	$img[0].src = '';
-              // 	$img.parent().find('.grid__caption').html('Empty');
-              // }
+        
             }
 
 
