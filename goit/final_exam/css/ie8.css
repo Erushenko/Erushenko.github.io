@@ -7,15 +7,15 @@ header, nav,footer, main {
   padding: 0; }
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url(../fonts/Montserrat-Bold.eot);  
+    src: url(../fonts/Montserrat-Bold.eot);
    }
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url(../fonts/Montserrat-Regular.eot);  
+    src: url(../fonts/Montserrat-Regular.eot);
    }
 @font-face {
     font-family: 'Roboto-Light';
-    src: url(../fonts/Roboto-Light.eot);  
+    src: url(../fonts/Roboto-Light.eot);
    }
 
 .clearfix:after {
@@ -137,24 +137,15 @@ nav {
   position: relative;
   width: 300px;
   height: 400px;
-  border-radius: 5px; }
-
-.step1 {
-  background: url(../img/step1.png) center; }
-
-.step2 {
-  background: url(../img/step2.png) center; }
-
-.step3 {
-  background: url(../img/step3.png) center; }
+  }
 
 .text--info {
   position: absolute;
   bottom: 0;
   padding: 20px;
   box-sizing: border-box; }
-  
-.text--info .text__link, 
+
+.text--info .text__link,
 .text--info .search__link {
     font-family: "Montserrat-Regular", arial;
     font-size: 10px;
@@ -243,43 +234,38 @@ nav {
     background: #fff;
     border: 2px solid #FF4e50; }
 
-.line {
-  width: auto;
-  margin-bottom: 20px; }
-  .line .title {
-    display: table-cell;
-    font-size: 21px;
-    color: #fff;
-    vertical-align: middle;
-    text-align: center; }
+    .grid {
+      max-width: 940px;
+    }
+    .grid:after {
+      display: block;
+      clear: both;
 
-.line:last-child {
-  margin-bottom: 0; }
+      content: '';
+    }
 
-.img1,
-.img2,
-.img3,
-.img4,
-.img7,
-.img5,
-.img6 {
-  float: left;
-  display: table;
-  width: 300px;
-  height: 310px;
-  background: red;
-  border-radius: 5px;
-  margin-right: 20px; }
+    .grid-item,
+    .grid-item--width2 {
+      margin-bottom: 20px;
+      display: table;
+    	float: left;
+      overflow: hidden;
+      width: 300px;
+      height: 310px;
+    	border-radius: 5px;
+    	background-size: contain;}
 
-.img5,
-.img6 {
-  width: 620px;
-  background: green; }
+    .grid-item .title,
+    .grid-item--width2 .title{
+    		display: table-cell;
+    		font-size: 21px;
+    		color: #fff;
+    		vertical-align: middle;
+    		text-align: center;
+    	}
 
-.img3,
-.img5,
-.img7 {
-  margin-right: 0; }
+    .grid-item--width2 { width: 620px; }
+
 
 .search {
   margin: 40px auto 100px;

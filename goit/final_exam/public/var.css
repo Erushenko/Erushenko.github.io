@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  /*src: url(../fonts/LeagueGothicRegular.eot);*/
+  src: url(../fonts/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../fonts/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url(../fonts/Roboto-Light.ttf); }
+
+/*# sourceMappingURL=var.css.map */

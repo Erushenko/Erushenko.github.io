@@ -1,0 +1,21 @@
+$bgcolor:   #fff;
+$color:     #000;
+$blcolor: #248cec;
+$grcolor: #8f8f8f;
+$widthwr: 1440px;
+$width:     940px;
+$fontbold:  'Montserrat-Bold', arial;
+$fontlight: 'Roboto-Light', arial;
+$fontreg: 'Montserrat-Regular', arial;
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);  
+   }
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat-Regular.ttf);  
+   }
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf);  
+   }

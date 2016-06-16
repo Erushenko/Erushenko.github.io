@@ -1,0 +1,137 @@
+.wrapper,
+header,
+footer,
+nav,
+main,
+.block,
+.footer {
+  max-width: 320px;
+  /*	  	box-sizing: border-box;
+  */
+  margin: 0; }
+
+header {
+  height: 540px; }
+
+nav {
+  padding-top: 30px;
+  padding-left: 65px; }
+
+.logo {
+  display: none; }
+
+.logo--320px {
+  display: block;
+  margin-top: 125px;
+  text-align: center; }
+
+.menu {
+  float: none; }
+
+.text {
+  width: 280px; }
+  .text .title {
+    font-size: 30px;
+    margin-top: 33px;
+    line-height: 1.2; }
+  .text .title__sub {
+    font-size: 18px;
+    margin-top: 10px; }
+  .text .text__link {
+    margin-top: 20px;
+    width: 240px; }
+
+.block {
+  margin-top: 35px; }
+
+.content {
+  margin-top: 15px; }
+
+.text--small .title {
+  font-size: 22px; }
+.text--small .title__sub {
+  margin-top: 15px; }
+
+.step {
+  margin: 0 0 10px 0; }
+
+.step:last-child {
+  margin-bottom: 0; }
+
+.step1,
+.step2,
+.step3 {
+  width: 300px;
+  height: 240px; }
+
+.content-photo {
+  padding-left: 40px; }
+
+.photo,
+.photo:first-child {
+  margin-bottom: 28px;
+  margin-right: 0; }
+
+.photo:last-child {
+  margin-bottom: 0; }
+
+.text--mod .text__link {
+  margin-top: 0;
+  width: 270px;
+  padding: 11px 25px;
+  box-sizing: border-box; }
+
+.line {
+  margin-bottom: 0; }
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img7,
+.img5,
+.img6 {
+  width: 300px;
+  height: 120px;
+  margin-bottom: 10px; }
+
+.img7 {
+  margin-bottom: 0; }
+
+.search {
+  margin: 18px auto 40px;
+  padding-left: 5px; }
+
+.search__field {
+  width: 280px;
+  margin-bottom: 8px; }
+
+.search__link {
+  width: 240px;
+  text-align: center; }
+
+.footer {
+  padding: 0;
+  text-align: center; }
+
+.logo--foot {
+  display: block;
+  float: none; }
+  .logo--foot .logo__link {
+    margin-right: 0; }
+
+.menu--foot .menu__item {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  float: none; }
+.menu--foot .menu__dropdown {
+  text-align: center; }
+  .menu--foot .menu__dropdown .menu__item {
+    display: inline; }
+
+.logo--right {
+  float: none;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=width320.css.map */
