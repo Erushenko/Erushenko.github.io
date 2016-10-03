@@ -23,13 +23,14 @@ body {
 
 .wrapper,
 header,
-footer {
-  max-width: 1440px;
+{
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden; }
 
 nav,
 .block,
+main,
 .footer {
   max-width: 940px;
   margin: 0 auto; }
@@ -37,8 +38,11 @@ nav,
 header {
   display: table;
   height: 700px;
-  width: 1440px;
-  background: url(../img/head.jpg) center; }
+  width: 100%;
+  background: url(../img/head.jpg) center; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 
 nav {
   margin-top: 48px; }
@@ -291,16 +295,13 @@ footer {
 
 .menu--foot {
   float: left;
-  /*	.menu__item:hover .menu__dropdown{
-  		display: block;
-  	}*/ }
+}
   .menu--foot .menu__item {
     float: left;
     font-size: 15px;
     margin-right: 85px;
     cursor: pointer; }
   .menu--foot .menu__dropdown {
-    /*display: none;*/
     margin: 13px 0 40px 0; }
     .menu--foot .menu__dropdown .menu__item {
       display: block;
@@ -316,9 +317,6 @@ footer {
       border: none; }
 
 @media (max-width: 1440px) {
-  .wrapper,
-  header,
-  footer,
   nav,
   .block,
   .footer {
@@ -361,11 +359,10 @@ footer {
 
   .menu--foot .menu__item {
     margin-right: 95px; } }
+
 @media (max-width: 768px) {
-  .wrapper,
-  header,
-  footer,
-  nav,
+  
+ nav,
   main,
   .block,
   .footer {
